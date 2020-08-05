@@ -1,13 +1,18 @@
-let incr = 10,
-    decr = 10;
+const numberOfFilms = +prompt ("skoljko filjmov vi posmotreli");
 
-incr++;
-decr--;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
 
-console.log(incr);
-console.log(decr);
+const a = prompt("odin iz poslednih prosmotrevajemih filjmov" ,""),
+        b= prompt("naskoljko ocenivaesh ?", ""),
+        c = prompt("odin iz poslednih prosmotrevajemih filjmov" ,""),  
+        d= prompt("naskoljko ocenivaesh ?", "");
 
-const isChecked = true;
-        isClose= true ;
-
-console.log(isChecked && isClose)
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
